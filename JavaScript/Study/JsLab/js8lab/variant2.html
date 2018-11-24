@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function () {
+                $(".even").fadeOut("slow")
+
+        });
+    });
+    </script>
+    </head>
+    <body>
+        <button>Запустить!</button>
+      <br><br>
+      <div class="odd" style="width:80px;height:80px;background-color:red;"></div><br>
+      <div class="even" style="width:80px;height:80px;background-color:green;"></div><br>
+      <div class="odd" style="width:80px;height:80px;background-color:blue;"></div><br>
+      <div class="even" style="width:80px;height:80px;background-color:yellow;"></div><br>
+      <div class="odd" style="width:80px;height:80px;background-color:pink;"></div><br>
+      <div class="even" style="width:80px;height:80px;background-color:purple;"></div><br>
+    </body>
+    </html>

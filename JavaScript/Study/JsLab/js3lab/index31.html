@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример 31</title>
+</head>
+<body>
+	<script>
+		const n = prompt('Введите число n: '); 
+		const check = /^(\-|\+)?([0-9]+|Infinity)$/;
+  	    if (check.test(n) && (n < 75 || n > 0)){ 
+			let z = 1;
+			if(n > 1){
+				let i = 2;
+				do{
+					z = z * i;
+					i++
+				}
+				while(i<=+n);
+			}
+			alert('Факториал числа '+n+' равен '+z)
+		}
+		else alert('Ошибка! Введиет коректное число');
+	</script>
+</body>
+</html>

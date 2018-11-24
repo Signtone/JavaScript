@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Navigator </title>
+	<script language="javascript">
+        var firstn=window.prompt("Введите Ваше Имя: ","Ваше имя")
+        if (firstn== ' ' || firstn== 0 || firstn>0 || firstn== "Ваше имя") {
+            window.alert('Введите именно Имя!!! Не число! Не пробел! Only Name!')
+        }
+        else {
+        function welcome(){
+            var appname=navigator.appName
+            var appver=navigator.appVersion
+            window.alert("Привет, "+firstn+"! Вы используете " +appname+". Версия"+appver+". Спасибо за Ваш визит!");
+        }
+            function writename() {
+                document.write(firstn+".");
+            }
+        
+        }
+	</script>
+</head>
+<body onload="welcome()">
+    Добро пожаловать,
+    <script language="javascript">
+    writename();
+    </script>
+</body>
+</html>

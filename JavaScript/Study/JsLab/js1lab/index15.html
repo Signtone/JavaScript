@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+    <body>
+        <script>
+        var name = new Object();
+	    name = prompt("Введите сюда свое имя", "Введите Имя");
+	    alert('Ваше имя '+ name +'. Очень рады знакомству с Вами!!!');
+        var age = new Object();
+	    age = parseInt(prompt("Сколько Вам лет, если не секрет?", "35"));
+        function val(){
+        var Validate=age;
+        if(/[^[0-9]/.test(Validate)){
+        alert('Введите целое, положительное число!');
+        }
+        else{
+        alert('Через 10 лет Вам будет '+ (age+10) +' лет.');
+        };
+        }
+        val();
+        </script>
+    </body>
+</html>

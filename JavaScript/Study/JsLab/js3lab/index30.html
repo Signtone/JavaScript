@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Пример 30</title>
+  </head>
+    <body>
+        <script>
+            const x = window.prompt("Введите число x: ");
+  	        const y = window.prompt("Введите число y: ");
+  	        const check = /^(\-|\+)?([0-9]+|Infinity)$/;
+            const check2 = /^(\-|\+)?([0-9]+(\.[0-9]+)?|Infinity)$/;
+  	        if ((check2.test(x) && check.test(y)) && ((x < 100 && y <100) || (x > -100 && y >-100))) { 
+  		    let z = Math.pow(x,y);
+  		    window.alert('Число '+x+' в степени '+y+' равно '+z);
+  	        }
+  	        else(window.alert("Введите число")); 
+        </script>
+    </body>
+</html>

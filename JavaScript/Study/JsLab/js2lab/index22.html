@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Операторы ветвления и условий в JavaScript</title>
+  </head>
+  <body>
+      <script>
+       var year = prompt('В каком году у Вас в группе начал вести занятия Виталий Валентинович?', '');
+       if (isNaN(year) || year <0 || year == " ") {
+       alert ('А введите как все таки год');
+       }
+       else if (year < 2018) {
+       alert('Да не может быть! Это слишком рано..');
+       }
+       else if (year > 2018) {
+       alert('Да вы что! Как-то поздновато..');
+       }
+       else {
+       alert('Вы знаток! Да, точно в этом году!');
+       }
+      </script>
+  </body>
+</html>

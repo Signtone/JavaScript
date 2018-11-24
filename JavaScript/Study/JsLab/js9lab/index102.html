@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<title>С9</title>
+</head>
+<body>
+<script>
+ const array = ['a', 'b', 'c', 'b', 'a','b', 'c', 'b', 'a'];
+ const str = array.sort();
+ console.log(str);
+ for (let i = 0; i < str.length; i++) {
+ 	if(str[i] == str[i+1]) delete str[i];
+ }
+ console.log(str.join().replace(/,/gm,"").split(""));
+</script>
+Самостоятелная работа 9
+</body>
+</html>

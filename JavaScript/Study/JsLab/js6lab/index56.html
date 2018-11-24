@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Свойства обьекта Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        var bgc = document.bgColor;
+        var fgc = document.fgColor;
+        var lc = document.linkColor;
+        var al = document.alinkColor;
+        var vlc = document.vlinkColor;
+        var url = document.location;
+        var ref = document.referrer;
+        var t = document.title;
+        var lm = document.lastModified;
+        document.write('ВЫВОД: Не все браузеры поддерживают любые команды JavaScript и не все браузеры позволяют абсолютно все манипуляции с ними')
+        
+        document.write('<br> Цвет фона этой страницы <b>' + bgc + '</b>.');
+        document.write('<br> Цвет текста этой страницы <b>' + fgc + '</b>.');
+        document.write('<br> Цвет ссылок этой страницы <b>' + lc + '</b>');
+        document.write('<br> Цвет активной ссылки этой страницы <b>' + al + '</b>.');
+        document.write('<br> Цвет посещенной ссылки этой страницы <b>' + vlc + '</b>.');
+        document.write('<br> URL этой страницы <b>' + url + '</b>.');
+        document.write('<br> До этого вы были на странице <b>' + ref + '</b>.');
+        document.write('<br> Заголовок этой страницы <b>' + t + '</b>.');
+        document.write('<br> Последние изменения в документ внесены: <b>' + lm + '</b>.');
+        
+    </script>
+</body>
+</html>

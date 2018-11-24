@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>index35</title>
+</head>
+<body>
+<script>
+		var mushroom_color = window.prompt("Какого цвета гриб?(белый, желтый, красный, коричневый)")
+		var mushroom_skirt = window.prompt("Есть ли у гриба юбка?(есть, нет)");
+		
+		if(mushroom_color =='белый' && mushroom_skirt =='нет') mushroom='1';
+		if(mushroom_color =='красный' && mushroom_skirt =='есть') mushroom='2';
+		if(mushroom_color =='красный' && mushroom_skirt =='нет') mushroom='3';
+		switch(mushroom){
+			case '1':
+				window.alert("вы нашли белый гриб");
+				break;
+			case '2':
+				window.alert("а не мухомор ли это");
+				break;
+			case '3':
+				window.alert("может это подосиновик");
+				break;
+			default:
+				window.alert("с грибами надо быть внимательным");
+		}
+	</script>
+</body>
+</html>

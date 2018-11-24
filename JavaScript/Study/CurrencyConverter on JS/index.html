@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
+  </head>
+  <body>
+    <div class="main-div">
+        <div class="converter-form">
+            <h2>Конвертер валют</h2>
+            <h4>[DATE]</h4>
+            <p>По курсу НБРБ</p>
+            <div class="grid-form">
+                <div class="currency-one-left">
+                    <input type="number" name="currency-1" pattern="\d{2}" max="9" onkeypress='validate(event), limit(this)' id="first" onkeyup="setInputValue('first'), handleChenge('second')" autocomplete="off" onkeydown="limit(this)">
+                </div>
+                <div class="currency-one-right">
+                    <select name="currency-select-1" id="currency-select-one" onkeypress='validate(event)' onchange="setSelectValue('currency-select-one','currency-select-two'), handleChenge('second')">
+                        <option value="BYN" selected>BYN</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                        <option value="UAH">UAH</option>
+                        <option value="PLN">PLN</option>
+                    </select>
+                </div>
+            
+                <div class="currency-two-left">
+                    <input type="number" name="currency-2" id="second" onkeyup="setInputValue('second'), handleChenge('first')" autocomplete="off" onkeypress='validate(event)' max="99999999999999" onkeydown="limit(this);">
+                </div>
+                <div class="currency-two-right">
+                    <select name="currency-select-2" id="currency-select-two"onchange="setSelectValue('currency-select-two','currency-select-one'), handleChenge('first')">
+                        <option value="BYN">BYN</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                        <option value="UAH">UAH</option>
+                        <option value="PLN">PLN</option>
+                    </select>
+                </div>
+                         
+                    <div class="clean-button">
+                        <input type="button" class="btn" value="Очистить" onclick="clearInputs()">
+                    </div>
+                  <!--   <div class="convert-button">
+                        <input type="submit" class="btn" value="Посчитать">
+                    </div>  -->       
+            </div>
+        </div>
+    </div>
+   <script type='text/javascript' src='script.js'></script>
+  </body>
+</html>

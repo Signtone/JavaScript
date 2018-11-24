@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дата</title>
+    <meta charset="utf-8">
+</head>
+<body>
+	<script>
+		let a =  prompt('Введите дату, в формате: Пример (23/08/1986) \" - . / \" : ','');
+		const reg = /^(?=\d)(?:(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?:\x20|$))|(?:2[0-8]|1\d|0?[1-9]))([-.\/])(?:1[012]|0?[1-9])\1(?:1[6-9]|[2-9]\d)?\d\d(?:(?=\x20\d)\x20|$))?(((0?[1-9]|1[012])(:[0-5]\d){0,2}(\x20[AP]M))|([01]\d|2[0-3])(:[0-5]\d){1,2})?$/;
+        let str;
+        if(reg.test(a)) str = a.split(/[-/.]/gm);
+          else alert('Введите дату!');
+        let month = str[1];
+        let delzero = month.split(/^0/gm);
+        let month2;
+        if(delzero.length > 1) month2 = delzero[1];
+        else month2 = delzero[0];
+     
+        
+        switch (Number(month2)) {
+	      case 12:
+	      case 1:
+	      case 2:      
+	         alert("Зима!");
+	         break;
+	      case 3:
+	      case 4:
+	      case 5:      
+	         alert("Весна!");
+	         break;
+	      case 6:
+	      case 7:
+	      case 8:      
+	         alert("Лето!");
+	         break;
+	      case 9:
+	      case 10:
+	      case 11:      
+	         alert("Осень!");
+	         break;      
+	      default:
+	         alert("Осень!");
+	      break;
+	    }
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Свойства обьекта Document</title>
+</head>
+
+<body>
+	
+	<p id="demo">Используя в модели DOM метод getElemtntById найдем тэг &lt;p&gt; c id=demo и заменим, содержащийся в нем текст на текст "Отличная работа 1"</p>
+	<p>Используя в модели DOM метод getElementByTagName найдем тэг &lt;p&gt; и заменим, содержиащийся в нем текст на текст "Отличная работа 2"</p>
+	<p class="test"> Используя в модели DOM метод getElemtntByClassName найдем тэг &lt;p&gt; c class = test и заменим, содержащийся в нем текст на текст "Отличная работа 3"</p>
+	<h1> Используя в модели DOM метод querySelectorAll найдем тэг &lt;h1&gt; и заменим, содержащийся в нем текст на текст "Отличная работа 4"</h1>
+	
+	<script>
+	document.getElementById("demo").innerHTML= "Отличная работа 1";
+	document.getElementsByTagName("p")[1].innerHTML = "Отличная работа 2";
+	document.getElementsByClassName("test")[0].innerHTML = "Отличная работа 3";	
+	document.querySelectorAll("h1")[0].innerHTML = "Отличная работа 4";	
+		
+	</script>
+</body>
+</html>

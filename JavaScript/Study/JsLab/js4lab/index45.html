@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Операторы ветвления и условий в JavaScript</title>
+  </head>
+    <body>
+        <script>
+            var age = Number (prompt('Ваш возрат?'));
+            function checkAge(age) {
+                if (age>18 || isNaN(age) || age==' ') {
+                    alert('Доступ разрешен');
+                } else {
+                    return confirm('Родители разрешили?') ? alert('Доступ разрешен') : alert('В доступе октазано');
+                }
+            }  
+            checkAge(age);
+        </script>
+    </body>
+</html>

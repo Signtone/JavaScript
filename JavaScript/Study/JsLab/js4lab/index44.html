@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Операторы ветвления и условий в JavaScript</title>
+  </head>
+    <body>
+        <script>
+            var a= Number (prompt("Введи число a ",""));
+       		var b= Number (prompt("Введи число b ", ""));
+            var c= Number (prompt("Введи число с ", ""));
+            function caclD (a, b, c) {
+                return b*b-4*a*c;
+            }
+            if (isNaN(a) || isNaN(b) || isNaN(c) || a==' ' || b==' ' || c==' ')
+            {
+                alert('Введите числа!')
+            }
+            else {
+            var discriminant = caclD(a, b, c);
+            alert ('D='+discriminant);
+            }
+        </script>
+    </body>
+</html>

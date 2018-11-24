@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Переделочка</title>
+<style>
+    a{
+        color:blue;
+    }
+
+    a:active {
+        color: blue;
+    }
+    a:focus{
+        color: blue;
+    }
+</style>
+    <script language="javascript">
+
+        function getProperty(){
+        var body = document.getElementsByTagName('body')[0];
+        var a = document.createElement( 'a' );
+        body.appendChild( a ); 		
+        var bgc =  window.getComputedStyle(document.body,null).getPropertyValue("background-color");	
+        var fgc =  window.getComputedStyle(document.body,null).getPropertyValue("color");
+        var lc =  window.getComputedStyle(a, null).getPropertyValue("color");		
+        var al = window.getComputedStyle(a, ':active').getPropertyValue("color");
+        var vlc = window.getComputedStyle(a, ':focus').getPropertyValue("color");	
+        var url = document.location;
+        var ref = document.referrer;
+        var t = document.title;
+        var lm = document.lastModified;
+        document.write("Цвет фона этой страницы <b>" + bgc + "</b>.");
+        document.write("<br>Цвет текста этой страницы <b>" + fgc + "</b>.");
+        document.write("<br>Цвет ссылки этой страницы <b>" + lc + "</b>.");
+        document.write("<br>Цвет активной ссылки этой страницы <b>" + al + "</b>.");
+        document.write("<br>Цвет посещенной ссылки этой страницы <B>"+ vlc +"</b>.");	
+        document.write("<br>URL этой страницы <b>" + url + "</b>.");
+        document.write("<br>До этого вы были на странице <b>" + ref + "</b>.");
+        document.write("<br>Заголовок этой странице <b>" + t + "</b>.");
+        document.write("<br>Последние изменения в документ внесены <b>" + lm + "</b>.");
+    };
+    </script>
+</head>
+    <body>
+        <button onClick="getProperty()">Нажми меня</button>
+    </body>
+</html>

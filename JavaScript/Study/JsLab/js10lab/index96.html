@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+	 <script type="text/javascript">
+      $(function () {
+      	$("tr:first").css("background-color", "#ccc")
+      	$("tr:last").css("background-color", "yellow")
+      	$("tr:odd").css("background-color", "orange")
+      	$(function () {
+      		$("td:lt(3)").css("background-color", "pink")
+      	$("td:gt(3)").css("background-color", "pink")
+		  $("th").css("background-color", "pink")
+      	});
+      	
+      });
+    </script>
+<TITLE>Таблицы на веб-странице</title>
+</HEAD>
+<BODY>
+<p> Мама мыла Раму!</p>
+
+	<table BGCOLOR=#56C2F4 border=1 cellpadding=5 cellspacing=1 align=center width=80%> 
+		<caption><h3> Рост курса доллара США в 2018 году </h3></caption>
+		<!--
+		<thead>
+		..........................
+		</thead>
+		<tfoot>
+		..........................
+		</tfoot>
+		-->
+		
+		<tbody>
+		<tr BGCOLOR="yellow">
+			<th>№ п/п </th>
+			<th> Месяц года</th>
+			<th> Курс по отношению к бел.рублю</th>
+		</tr>	
+		<tr>
+			<td>1 </td>
+			<td bgcolor="pink" colspan=2 rowspan=2 align=center> Январь 2.124</td>
+			
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		
+		</tbody>
+	</table>
+</BODY>
+</HTML>

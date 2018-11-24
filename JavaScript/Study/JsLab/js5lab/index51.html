@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Пример скрипта</title>
+    <script type="text/javascript">
+        function up() {
+            document.mypic.src="img/on.jpg"
+        }
+        function down() {
+            document.mypic.src="img/off.jpg"
+        }
+        function up2() {
+            document.mypic2.src="img/off.jpg"
+        }
+        function down2() {
+            document.mypic2.src="img/on.jpg"
+        }
+    </script>
+</head>
+<body>
+    <h2>
+        <a href="http://www.exam.by" onmouseover="up()" onmouseout="down()">
+        <img src="img/off.jpg" name="mypic" BORDER=0></a>
+        <a href="http://www.onliner.by" onmouseover="up2()" onmouseout="down2()">
+        <img src="img/off.jpg" name="mypic2" BORDER=0></a>
+    </h2>
+
+</body>
+</html>

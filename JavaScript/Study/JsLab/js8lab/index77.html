@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+              alert("Text: " + $("#test").text());
+            });
+              $("#btn2").click(function () {
+              alert("HTML: " + $("#test").html());
+            });
+              $("#btn3").click(function () {
+              alert("Value: " + $("#test1").val());
+
+        });
+    });
+    </script>
+    </head>
+    <body>
+        <p id="test">Это некоторый <b>полужирный</b> текст в абзаце</p>
+        <button id="btn1">Показать текст</button>
+        <button id="btn2">Показать HTML</button>
+    <br>
+        <p>Name:<input type="text" id="test1" value="ФИО сотрудник"></p>
+        <button id="btn3">Показать значение поля ввода формы</button>
+ </body>
+</html>
